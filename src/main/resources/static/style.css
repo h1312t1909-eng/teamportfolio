@@ -10,61 +10,55 @@
    0. CSS CUSTOM PROPERTIES
 ========================== */
 :root {
-    /* ── Attitude Palette ─────────────────────────────
-       Gradient 1: #F2E6EE → #977DFF  (lavender-pink to violet)
-       Gradient 2: #FFCCF2 → #977DFF → #0033FF
-       Gradient 3: #977DFF → #0033FF → #0600AB
-       Gradient 4: #0033FF → #0600AB → #00033D
+    /* ── Red & White Palette ──────────────────────────
+       Reds:  #EF4444 (bright) → #DC2626 (crimson) → #991B1B (deep)
+       White: #FFFFFF → #FEE2E2 (rose-50) → #FCA5A5 (rose-300)
+       Bg:    #0D0000 → #1a0202 → #220303
     ─────────────────────────────────────────────────── */
 
-    /* Primary — bright royal blue */
-    --clr-primary: #0033FF;
-    --clr-primary-light: #977DFF;
-    /* violet / mid gradient */
-    --clr-primary-dark: #0600AB;
-    /* deep indigo */
+    /* Primary — crimson red */
+    --clr-primary: #DC2626;
+    /* red-600 */
+    --clr-primary-light: #EF4444;
+    /* red-400 */
+    --clr-primary-dark: #991B1B;
+    /* red-800 */
 
-    /* Accent — soft pink highlight */
-    --clr-accent: #FFCCF2;
-    /* pink (Gradient 2 top) */
-    --clr-accent-2: #F2E6EE;
-    /* lavender-white (Gradient 1 top) */
+    /* Accent — white & light rose */
+    --clr-accent: #FFFFFF;
+    /* pure white */
+    --clr-accent-2: #FEE2E2;
+    /* rose-100 */
 
-    /* Backgrounds — deep navy family */
-    --bg-deep: #00033D;
-    /* darkest navy (Gradient 4 bottom) */
-    --bg-dark: #02063a;
-    /* slightly lighter navy */
-    --bg-card: #060a4a;
-    /* card surface */
-    --bg-card-2: #0a1060;
-    /* card alt surface */
-    --bg-glass: hsla(230, 95%, 12%, 0.72);
+    /* Backgrounds — near-black with deep red tint */
+    --bg-deep: #0D0000;
+    --bg-dark: #1a0202;
+    --bg-card: #220303;
+    --bg-card-2: #2d0505;
+    --bg-glass: hsla(0, 80%, 8%, 0.75);
 
-    /* Text */
-    --text-primary: #F2E6EE;
-    /* lavender-white (readable on dark navy) */
-    --text-secondary: #c5bcdc;
-    /* muted violet-white */
-    --text-muted: #7a72a8;
-    /* desaturated mid-violet */
+    /* Text — white family */
+    --text-primary: #FFFFFF;
+    --text-secondary: #FEE2E2;
+    /* rose-100 */
+    --text-muted: #FCA5A5;
+    /* rose-300 */
 
     /* Borders */
-    --border-color: hsla(230, 80%, 60%, 0.2);
-    --border-hover: hsla(230, 100%, 55%, 0.5);
-    /* bright blue glow */
+    --border-color: hsla(0, 70%, 40%, 0.25);
+    --border-hover: hsla(0, 72%, 51%, 0.6);
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #977DFF 0%, #0033FF 100%);
-    --gradient-accent: linear-gradient(135deg, #FFCCF2 0%, #977DFF 50%, #0033FF 100%);
-    --gradient-card: linear-gradient(145deg, #060a4a 0%, #0a1060 100%);
-    --gradient-hero: linear-gradient(135deg, #0600AB 0%, #0033FF 50%, #977DFF 100%);
+    --gradient-primary: linear-gradient(135deg, #EF4444 0%, #991B1B 100%);
+    --gradient-accent: linear-gradient(135deg, #FFFFFF 0%, #FCA5A5 50%, #DC2626 100%);
+    --gradient-card: linear-gradient(145deg, #220303 0%, #2d0505 100%);
+    --gradient-hero: linear-gradient(135deg, #7f1d1d 0%, #DC2626 50%, #EF4444 100%);
 
-    /* Shadows — blue-tinted */
+    /* Shadows — red-tinted */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
-    --shadow-md: 0 8px 24px rgba(0, 0, 51, 0.5);
-    --shadow-lg: 0 20px 60px rgba(0, 0, 30, 0.6);
-    --shadow-glow: 0 0 32px hsla(230, 100%, 55%, 0.3);
+    --shadow-md: 0 8px 24px rgba(80, 0, 0, 0.45);
+    --shadow-lg: 0 20px 60px rgba(50, 0, 0, 0.55);
+    --shadow-glow: 0 0 32px hsla(0, 72%, 51%, 0.3);
 
     /* Spacing */
     --section-py: 100px;
@@ -85,6 +79,7 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 /* ==========================
