@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Team Portfolio - Meet our talented development team. Explore our projects, skills and get in touch with us." />
+    <meta name="keywords" content="team portfolio, web development, java, full stack developers" />
+    <title>Team Portfolio | Elite Dev Squad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===========================
+       NAVIGATION BAR
+  ============================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <!-- Logo / Brand -->
+            <a href="#home" class="nav-logo" aria-label="Elite Dev Squad Home">
+                <span class="logo-icon"><i class="fas fa-code"></i></span>
+                <span class="logo-text">Elite<span class="accent">Dev</span></span>
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="nav-cta">Get In Touch</a>
+
+            <!-- Mobile hamburger toggle -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===========================
+       1. HOME / HERO SECTION
+  ============================ -->
+    <section id="home" class="hero-section">
+        <!-- Animated background particles -->
+        <div class="hero-bg-grid"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for Projects</span>
+                </div>
+
+                <!-- Heading -->
+                <h1 class="hero-title">
+                    We Are <span class="gradient-text">Elite Dev</span> Squad
+                </h1>
+
+                <!-- Tagline -->
+                <p class="hero-tagline">
+                    Crafting <span class="typewriter" id="typewriter"></span>
+                </p>
+
+                <!-- Description -->
+                <p class="hero-description">
+                    A passionate team of full-stack developers building scalable, beautiful and impactful digital
+                    experiences.
+                    From pixel-perfect frontends to robust Java backends — we bring ideas to life.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="25">0</span>+
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>+
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>+
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hero-visual">
+                <div class="hero-card-stack">
+                    <div class="floating-card card-tech card-1">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="floating-card card-tech card-2">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="floating-card card-tech card-3">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="floating-card card-tech card-4">
+                        <i class="fab fa-spring"></i>
+                        <span>Spring</span>
+                    </div>
+                    <div class="hero-circle">
+                        <div class="hero-circle-inner">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+       2. ABOUT US SECTION
+  ============================ -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About <span class="gradient-text">Our Team</span></h2>
+                <p class="section-subtitle">Passionate developers united by a love for clean code and innovative
+                    solutions</p>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-grid">
+                <!-- Image / Visual Side -->
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-img-placeholder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <!-- Floating achievement badges -->
+                        <div class="about-badge about-badge-1">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <strong>Award Winning</strong>
+                                <span>Design Team</span>
+                            </div>
+                        </div>
+                        <div class="about-badge about-badge-2">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>100%</strong>
+                                <span>Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="about-content">
+                    <h3 class="about-heading">We build digital products that matter</h3>
+                    <p class="about-text">
+                        Elite Dev Squad is a dynamic team of creative developers and designers who are passionate
+                        about building exceptional digital experiences. Founded in 2019, we have successfully
+                        delivered over 25 projects across diverse industries, from startups to enterprise clients.
+                    </p>
+                    <p class="about-text">
+                        Our expertise lies in full-stack development using Java (Spring Boot), modern frontend
+                        technologies, and scalable database architectures. We believe great software is born
+                        from collaboration, creativity, and clean code.
+                    </p>
+
+                    <!-- Mission & Vision Cards -->
+                    <div class="mv-grid">
+                        <div class="mv-card">
+                            <div class="mv-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4>Our Mission</h4>
+                            <p>To deliver innovative, scalable, and high-quality software solutions that empower
+                                businesses and create meaningful user experiences.</p>
+                        </div>
+                        <div class="mv-card">
+                            <div class="mv-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4>Our Vision</h4>
+                            <p>To be the most sought-after development team, renowned for bridging the gap between
+                                cutting-edge technology and real-world impact.</p>
+                        </div>
+                    </div>
+
+                    <a href="#team" class="btn btn-primary">
+                        <i class="fas fa-users"></i>
+                        Meet the Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+       3. TEAM MEMBERS SECTION
+  ============================ -->
+    <section id="team" class="team-section section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-tag">The People</span>
+                <h2 class="section-title">Meet the <span class="gradient-text">Team</span></h2>
+                <p class="section-subtitle">Talented individuals who bring passion and expertise to every project</p>
+            </div>
+
+            <!-- Team Cards Grid -->
+            <div class="team-grid">
+
+                <!-- Team Member 1: Niranjan SR -->
+                <article class="team-card" id="member-1">
+                    <div class="team-card-inner">
+                        <!-- Card Front -->
+                        <div class="card-front">
+                            <div class="member-photo-wrapper">
+                                <div class="member-photo"
+                                    style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                                    <span class="member-initials">NS</span>
+                                </div>
+                                <div class="member-status">
+                                    <span class="status-dot"></span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Niranjan SR</h3>
+                                <span class="member-role">Full Stack Developer &amp; Team Lead</span>
+                                <p class="member-bio">
+                                    Expert in Java Spring Boot and React. Loves architecting robust backend systems
+                                    and leading teams to ship great products on time.
+                                </p>
+                                <div class="member-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">Spring Boot</span>
+                                    <span class="tag">React</span>
+                                </div>
+                            </div>
+                            <div class="member-socials">
+                                <a href="#" class="social-link" aria-label="LinkedIn" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Team Member 2: Thatshana B -->
+                <article class="team-card" id="member-2">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="member-photo-wrapper">
+                                <div class="member-photo"
+                                    style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                                    <span class="member-initials">TB</span>
+                                </div>
+                                <div class="member-status">
+                                    <span class="status-dot"></span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Thatshana B</h3>
+                                <span class="member-role">UI/UX Designer &amp; Frontend Dev</span>
+                                <p class="member-bio">
+                                    Creative designer with a knack for pixel-perfect interfaces. Passionate about
+                                    user experience, accessibility, and performance-first frontends.
+                                </p>
+                                <div class="member-tags">
+                                    <span class="tag">HTML/CSS</span>
+                                    <span class="tag">Figma</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="member-socials">
+                                <a href="#" class="social-link" aria-label="LinkedIn" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link" aria-label="Dribbble" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Team Member 3: John Richard -->
+                <article class="team-card" id="member-3">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="member-photo-wrapper">
+                                <div class="member-photo"
+                                    style="background: linear-gradient(135deg, #10b981, #059669);">
+                                    <span class="member-initials">JR</span>
+                                </div>
+                                <div class="member-status">
+                                    <span class="status-dot"></span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">John Richard</h3>
+                                <span class="member-role">Backend Developer &amp; DBA</span>
+                                <p class="member-bio">
+                                    Database wizard and Java backend specialist. Designs efficient schemas,
+                                    optimizes queries, and builds bulletproof REST APIs.
+                                </p>
+                                <div class="member-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">Hibernate</span>
+                                </div>
+                            </div>
+                            <div class="member-socials">
+                                <a href="#" class="social-link" aria-label="LinkedIn" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link" aria-label="Stack Overflow" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i></a>
+                                <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div><!-- /.team-grid -->
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- ===========================
+       4. SKILLS SECTION
+  ============================ -->
+    <section id="skills" class="skills-section section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-tag">What We Know</span>
+                <h2 class="section-title">Our <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools we master to build outstanding products</p>
+            </div>
+
+            <div class="skills-wrapper">
+                <!-- Skills Bars Column -->
+                <div class="skills-bars">
+                    <h3 class="skills-group-title">Core Technologies</h3>
+
+                    <!-- Skill: HTML5 -->
+                    <div class="skill-item" data-skill="HTML5" data-percent="95">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fab fa-html5 skill-icon html-icon"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="95"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill: CSS3 -->
+                    <div class="skill-item" data-skill="CSS3" data-percent="90">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fab fa-css3-alt skill-icon css-icon"></i>
+                                <span>CSS3 / SCSS</span>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill: JavaScript -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fab fa-js-square skill-icon js-icon"></i>
+                                <span>JavaScript / ES6+</span>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="88"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill: Java -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fab fa-java skill-icon java-icon"></i>
+                                <span>Java</span>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="92"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill: Spring Boot -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fas fa-leaf skill-icon spring-icon"></i>
+                                <span>Spring Boot</span>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill: SQL/MySQL -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fas fa-database skill-icon db-icon"></i>
+                                <span>MySQL / SQL</span>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="88"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill: React -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fab fa-react skill-icon react-icon"></i>
+                                <span>React.js</span>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="80"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill: Git -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">
+                                <i class="fab fa-git-alt skill-icon git-icon"></i>
+                                <span>Git / GitHub</span>
+                            </div>
+                            <span class="skill-percent">93%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="93"></div>
+                        </div>
+                    </div>
+                </div><!-- /.skills-bars -->
+
+                <!-- Skills Circles / Cards -->
+                <div class="skills-tools">
+                    <h3 class="skills-group-title">Tools & Platforms</h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fas fa-fire"></i>
+                            <span>Maven</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fas fa-server"></i>
+                            <span>Tomcat</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>REST API</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fas fa-cube"></i>
+                            <span>Hibernate</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fas fa-vials"></i>
+                            <span>JUnit</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </div><!-- /.skills-tools -->
+            </div><!-- /.skills-wrapper -->
+        </div>
+    </section>
+
+    <!-- ===========================
+       5. PROJECTS SECTION
+  ============================ -->
+    <section id="projects" class="projects-section section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of our best work and impactful solutions</p>
+            </div>
+
+            <!-- Project Filter Tabs -->
+            <div class="project-filters" role="tablist">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Apps</button>
+                <button class="filter-btn" data-filter="api" role="tab" aria-selected="false">Backend / API</button>
+                <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card" data-category="web" id="project-1">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder proj-1">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn" aria-label="View live demo" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="overlay-btn" aria-label="View GitHub repository" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Web App</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ShopEase E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-featured e-commerce platform built with Spring Boot and React. Features user auth,
+                            product catalog, shopping cart, payment integration, and an admin dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">React</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link project-link-alt" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="api" id="project-2">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder proj-2">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn" aria-label="View live demo" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="overlay-btn" aria-label="View GitHub repository" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Backend / API</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">HMS — Hospital Management System</h3>
+                        <p class="project-description">
+                            Enterprise-grade hospital management system with patient records, appointment scheduling,
+                            billing, and doctor dashboard. Built with Java Servlets and MySQL.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java Servlet</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JDBC</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link project-link-alt" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="web" id="project-3">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder proj-3">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn" aria-label="View live demo" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="overlay-btn" aria-label="View GitHub repository" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Web App</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TaskFlow Project Manager</h3>
+                        <p class="project-description">
+                            Collaborative project management tool with real-time updates, Kanban boards,
+                            team collaboration features, and deadline tracking. Built with Spring Boot and Vanilla JS.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link project-link-alt" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-category="mobile" id="project-4">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder proj-4">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn" aria-label="View live demo" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="overlay-btn" aria-label="View GitHub repository" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Mobile</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">FitTrack Wellness App</h3>
+                        <p class="project-description">
+                            Health and fitness tracking app with workout logging, nutrition tracking, progress
+                            charts, and personalized recommendations. Backend powered by Spring Boot API.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link project-link-alt" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-category="api" id="project-5">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder proj-5">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn" aria-label="View live demo" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="overlay-btn" aria-label="View GitHub repository" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Backend / API</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DataPulse Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Real-time business analytics dashboard with interactive charts, KPI tracking,
+                            CSV export, and role-based access control. Microservices architecture using Spring.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Microservices</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">JPA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link project-link-alt" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card" data-category="web" id="project-6">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder proj-6">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn" aria-label="View live demo" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="overlay-btn" aria-label="View GitHub repository" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Web App</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EduBridge LMS Platform</h3>
+                        <p class="project-description">
+                            Learning management system with video courses, quizzes, progress tracking,
+                            certificates, and student-instructor interaction. Full-stack Java + React solution.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">React</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Spring Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link project-link-alt" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div><!-- /.projects-grid -->
+        </div>
+    </section>
+
+    <!-- ===========================
+       6. CONTACT SECTION
+  ============================ -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-tag">Say Hello</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind? We'd love to hear from you. Let's create something
+                    amazing together!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info Cards -->
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Let's Talk</h3>
+                    <p class="contact-info-text">
+                        We're always open to discussing new projects, creative ideas or opportunities to be part of your
+                        visions.
+                    </p>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Email Us</h4>
+                                <a href="mailto:contact@elitedevsquad.com">contact@elitedevsquad.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Call Us</h4>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Location</h4>
+                                <span>Bangalore, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-socials">
+                        <a href="#" class="contact-social-btn" aria-label="LinkedIn" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="contact-social-btn" aria-label="GitHub" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" class="contact-social-btn" aria-label="Twitter" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="contact-social-btn" aria-label="Instagram" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <!-- Success / Error Alert -->
+                    <div class="form-alert" id="form-alert" role="alert" aria-live="polite"></div>
+
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <!-- Name field -->
+                            <div class="form-group" id="group-name">
+                                <label for="contact-name">Full Name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user input-icon"></i>
+                                    <input type="text" id="contact-name" name="name" placeholder="John Doe"
+                                        autocomplete="name" maxlength="100" required />
+                                </div>
+                                <span class="field-error" id="err-name"></span>
+                            </div>
+
+                            <!-- Email field -->
+                            <div class="form-group" id="group-email">
+                                <label for="contact-email">Email Address <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input type="email" id="contact-email" name="email" placeholder="john@example.com"
+                                        autocomplete="email" maxlength="150" required />
+                                </div>
+                                <span class="field-error" id="err-email"></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject field -->
+                        <div class="form-group" id="group-subject">
+                            <label for="contact-subject">Subject <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag input-icon"></i>
+                                <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry"
+                                    maxlength="200" required />
+                            </div>
+                            <span class="field-error" id="err-subject"></span>
+                        </div>
+
+                        <!-- Message field -->
+                        <div class="form-group" id="group-message">
+                            <label for="contact-message">Message <span class="required">*</span></label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-dots input-icon textarea-icon"></i>
+                                <textarea id="contact-message" name="message"
+                                    placeholder="Tell us about your project or idea..." rows="5" maxlength="2000"
+                                    required></textarea>
+                            </div>
+                            <div class="char-counter">
+                                <span id="char-count">0</span>/2000
+                            </div>
+                            <span class="field-error" id="err-message"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </span>
+                            <span class="btn-loading" style="display:none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div><!-- /.contact-form-wrapper -->
+            </div><!-- /.contact-wrapper -->
+        </div>
+    </section>
+
+    <!-- ===========================
+       7. FOOTER
+  ============================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-brand">
+                        <a href="#home" class="nav-logo footer-logo" aria-label="Elite Dev Squad Home">
+                            <span class="logo-icon"><i class="fas fa-code"></i></span>
+                            <span class="logo-text">Elite<span class="accent">Dev</span></span>
+                        </a>
+                        <p class="footer-tagline">
+                            Building tomorrow's digital solutions, today. Creative, efficient, and always reliable.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="#" class="footer-social" aria-label="LinkedIn" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="footer-social" aria-label="GitHub" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="#" class="footer-social" aria-label="Twitter" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer-social" aria-label="Instagram" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer-social" aria-label="YouTube" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links-col">
+                        <h4 class="footer-col-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-links-col">
+                        <h4 class="footer-col-title">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Backend APIs</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Cloud Deployment</a></li>
+                            <li><a href="#">Database Design</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-links-col">
+                        <h4 class="footer-col-title">Contact</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:contact@elitedevsquad.com">contact@elitedevsquad.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bangalore, Karnataka, India</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="copyright">
+                        &copy; <span id="current-year"></span> Elite Dev Squad. All rights reserved. Made with
+                        <i class="fas fa-heart" style="color: #f43f5e;"></i> in India.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===========================
+       JAVASCRIPT — Inline for simplicity
+  ============================ -->
+    <script>
+        /* ============================================================
+           SMOOTH SCROLL NAVIGATION
+        ============================================================ */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (!target) return;
+                e.preventDefault();
+                const navHeight = document.getElementById('navbar').offsetHeight;
+                const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                window.scrollTo({ top, behavior: 'smooth' });
+                // Close mobile menu if open
+                navLinks.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        /* ============================================================
+           NAVBAR – scroll effect + active link
+        ============================================================ */
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.getElementById('nav-links');
+        const hamburger = document.getElementById('hamburger');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            updateActiveNavLink();
+        });
+
+        // Highlight active nav link based on scroll position
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const navH = navbar.offsetHeight;
+            let current = '';
+            sections.forEach(sec => {
+                if (window.scrollY >= sec.offsetTop - navH - 60) {
+                    current = sec.id;
+                }
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+            });
+        }
+
+        /* ============================================================
+           MOBILE HAMBURGER MENU
+        ============================================================ */
+        hamburger.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', isOpen);
+            hamburger.classList.toggle('active', isOpen);
+        });
+
+        /* ============================================================
+           TYPEWRITER EFFECT
+        ============================================================ */
+        const typewriterEl = document.getElementById('typewriter');
+        const phrases = [
+            'Scalable Web Apps',
+            'Robust Java Backends',
+            'Beautiful Interfaces',
+            'Real-world Solutions',
+            'Exceptional APIs'
+        ];
+        let phraseIdx = 0;
+        let charIdx = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentPhrase = phrases[phraseIdx];
+            if (!isDeleting) {
+                typewriterEl.textContent = currentPhrase.slice(0, ++charIdx);
+                if (charIdx === currentPhrase.length) {
+                    setTimeout(() => { isDeleting = true; type(); }, 2000);
+                    return;
+                }
+            } else {
+                typewriterEl.textContent = currentPhrase.slice(0, --charIdx);
+                if (charIdx === 0) {
+                    isDeleting = false;
+                    phraseIdx = (phraseIdx + 1) % phrases.length;
+                }
+            }
+            setTimeout(type, isDeleting ? 60 : 100);
+        }
+        type();
+
+        /* ============================================================
+           COUNTER ANIMATION (Hero Stats)
+        ============================================================ */
+        function animateCounters() {
+            document.querySelectorAll('.stat-number').forEach(el => {
+                const target = parseInt(el.dataset.target, 10);
+                let count = 0;
+                const step = Math.ceil(target / 50);
+                const interval = setInterval(() => {
+                    count = Math.min(count + step, target);
+                    el.textContent = count;
+                    if (count >= target) clearInterval(interval);
+                }, 30);
+            });
+        }
+
+        /* ============================================================
+           INTERSECTION OBSERVER – Trigger animations on scroll
+        ============================================================ */
+        const observerOptions = { threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Animate skill bars
+                    if (entry.target.classList.contains('skills-section')) {
+                        document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+                            bar.style.width = bar.dataset.width + '%';
+                        });
+                    }
+                    // Animate counters
+                    if (entry.target.classList.contains('hero-section')) {
+                        animateCounters();
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+
+        /* ============================================================
+           PROJECT FILTER TABS
+        ============================================================ */
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+                const filter = btn.dataset.filter;
+                projectCards.forEach(card => {
+                    const match = filter === 'all' || card.dataset.category === filter;
+                    card.style.display = match ? 'flex' : 'none';
+                    // Re-trigger animation
+                    if (match) {
+                        card.classList.remove('visible');
+                        setTimeout(() => card.classList.add('visible'), 50);
+                    }
+                });
+            });
+        });
+
+        /* ============================================================
+           CONTACT FORM – Validation & Submission
+        ============================================================ */
+        const contactForm = document.getElementById('contact-form');
+        const formAlert = document.getElementById('form-alert');
+        const submitBtn = document.getElementById('submit-btn');
+        const charCountEl = document.getElementById('char-count');
+        const messageField = document.getElementById('contact-message');
+
+        // Character counter for message
+        messageField.addEventListener('input', () => {
+            charCountEl.textContent = messageField.value.length;
+        });
+
+        // Validate a single field — returns error msg or empty string
+        function validateField(field) {
+            const val = field.value.trim();
+            if (field.name === 'name') {
+                if (!val) return 'Full name is required.';
+                if (val.length < 2) return 'Name must be at least 2 characters.';
+                if (!/^[A-Za-z\s'-]+$/.test(val)) return 'Name should contain only letters.';
+            }
+            if (field.name === 'email') {
+                if (!val) return 'Email address is required.';
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) return 'Please enter a valid email address.';
+            }
+            if (field.name === 'subject') {
+                if (!val) return 'Subject is required.';
+                if (val.length < 3) return 'Subject must be at least 3 characters.';
+            }
+            if (field.name === 'message') {
+                if (!val) return 'Message is required.';
+                if (val.length < 10) return 'Message must be at least 10 characters.';
+            }
+            return '';
+        }
+
+        // Show or clear field error
+        function showFieldError(name, msg) {
+            const group = document.getElementById(`group-${name}`);
+            const errEl = document.getElementById(`err-${name}`);
+            if (msg) {
+                group.classList.add('has-error');
+                errEl.textContent = msg;
+            } else {
+                group.classList.remove('has-error');
+                errEl.textContent = '';
+            }
+        }
+
+        // Real-time inline validation on blur
+        contactForm.querySelectorAll('[name]').forEach(field => {
+            field.addEventListener('blur', () => {
+                const err = validateField(field);
+                showFieldError(field.name, err);
+                if (!err) {
+                    const group = document.getElementById(`group-${field.name}`);
+                    if (group) group.classList.add('has-success');
+                }
+            });
+            field.addEventListener('input', () => {
+                const group = document.getElementById(`group-${field.name}`);
+                if (group) { group.classList.remove('has-error'); group.classList.remove('has-success'); }
+                const errEl = document.getElementById(`err-${field.name}`);
+                if (errEl) errEl.textContent = '';
+            });
+        });
+
+        // Show an alert banner
+        function showAlert(type, msg) {
+            formAlert.className = `form-alert form-alert-${type}`;
+            formAlert.innerHTML = `<i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i> ${msg}`;
+            formAlert.style.display = 'flex';
+            setTimeout(() => { formAlert.style.display = 'none'; }, 6000);
+        }
+
+        // Form submit handler
+        contactForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            formAlert.style.display = 'none';
+
+            // Validate all fields
+            const fields = [...this.querySelectorAll('[name]')];
+            let isValid = true;
+            fields.forEach(field => {
+                const err = validateField(field);
+                showFieldError(field.name, err);
+                if (err) isValid = false;
+            });
+            if (!isValid) {
+                showAlert('error', 'Please fix the errors above before submitting.');
+                return;
+            }
+
+            // Collect data
+            const data = {
+                name: document.getElementById('contact-name').value.trim(),
+                email: document.getElementById('contact-email').value.trim(),
+                subject: document.getElementById('contact-subject').value.trim(),
+                message: document.getElementById('contact-message').value.trim()
+            };
+
+            // Show loading state
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline-flex';
+            submitBtn.disabled = true;
+
+            try {
+                /* -------------------------------------------------------
+                   POST to Spring Boot backend endpoint
+                   Endpoint: POST /api/contact
+                   The backend stores the message in MySQL.
+                ------------------------------------------------------- */
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    showAlert('success', 'Thank you! Your message has been received. We\'ll get back to you within 24 hours.');
+                    contactForm.reset();
+                    charCountEl.textContent = '0';
+                    fields.forEach(f => {
+                        const g = document.getElementById(`group-${f.name}`);
+                        if (g) { g.classList.remove('has-success'); g.classList.remove('has-error'); }
+                    });
+                } else {
+                    const errData = await response.json().catch(() => ({}));
+                    showAlert('error', errData.message || 'Something went wrong. Please try again later.');
+                }
+            } catch (err) {
+                // Network error or server not running – show info message
+                showAlert('error', 'Could not connect to server. Please check your connection or try again later.');
+            } finally {
+                btnText.style.display = 'inline-flex';
+                btnLoading.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+        });
+
+        /* ============================================================
+           BACK TO TOP BUTTON
+        ============================================================ */
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        /* ============================================================
+           FOOTER – Dynamic Year
+        ============================================================ */
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        /* ============================================================
+           ANIMATE ELEMENTS ON LOAD
+        ============================================================ */
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            animateCounters();
+        });
+    </script>
+</body>
+
+</html>

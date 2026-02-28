@@ -1,0 +1,28 @@
+# Maven build output
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Maven wrapper (downloaded binary)
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+
+# Downloaded Maven zip
+maven.zip
+
+# Spring Boot application PID
+*.pid
