@@ -10,48 +10,61 @@
    0. CSS CUSTOM PROPERTIES
 ========================== */
 :root {
-    /* Primary palette */
-    --clr-primary: hsl(244, 82%, 62%);
-    /* #5b4de8 */
-    --clr-primary-light: hsl(244, 82%, 72%);
-    --clr-primary-dark: hsl(244, 82%, 50%);
+    /* ── Attitude Palette ─────────────────────────────
+       Gradient 1: #F2E6EE → #977DFF  (lavender-pink to violet)
+       Gradient 2: #FFCCF2 → #977DFF → #0033FF
+       Gradient 3: #977DFF → #0033FF → #0600AB
+       Gradient 4: #0033FF → #0600AB → #00033D
+    ─────────────────────────────────────────────────── */
 
-    /* Accent */
-    --clr-accent: hsl(190, 90%, 50%);
-    /* cyan */
-    --clr-accent-2: hsl(320, 80%, 60%);
-    /* pink */
+    /* Primary — bright royal blue */
+    --clr-primary: #0033FF;
+    --clr-primary-light: #977DFF;
+    /* violet / mid gradient */
+    --clr-primary-dark: #0600AB;
+    /* deep indigo */
 
-    /* Backgrounds (dark theme) */
-    --bg-deep: hsl(225, 20%, 5%);
-    /* #0b0c14 */
-    --bg-dark: hsl(225, 18%, 9%);
-    /* #111420 */
-    --bg-card: hsl(225, 16%, 13%);
-    /* #181c2a */
-    --bg-card-2: hsl(225, 14%, 17%);
-    /* #1f2434 */
-    --bg-glass: hsla(225, 20%, 14%, 0.7);
+    /* Accent — soft pink highlight */
+    --clr-accent: #FFCCF2;
+    /* pink (Gradient 2 top) */
+    --clr-accent-2: #F2E6EE;
+    /* lavender-white (Gradient 1 top) */
+
+    /* Backgrounds — deep navy family */
+    --bg-deep: #00033D;
+    /* darkest navy (Gradient 4 bottom) */
+    --bg-dark: #02063a;
+    /* slightly lighter navy */
+    --bg-card: #060a4a;
+    /* card surface */
+    --bg-card-2: #0a1060;
+    /* card alt surface */
+    --bg-glass: hsla(230, 95%, 12%, 0.72);
 
     /* Text */
-    --text-primary: hsl(220, 30%, 96%);
-    --text-secondary: hsl(220, 15%, 65%);
-    --text-muted: hsl(220, 10%, 45%);
+    --text-primary: #F2E6EE;
+    /* lavender-white (readable on dark navy) */
+    --text-secondary: #c5bcdc;
+    /* muted violet-white */
+    --text-muted: #7a72a8;
+    /* desaturated mid-violet */
 
     /* Borders */
-    --border-color: hsla(220, 20%, 30%, 0.5);
-    --border-hover: hsla(244, 82%, 62%, 0.5);
+    --border-color: hsla(230, 80%, 60%, 0.2);
+    --border-hover: hsla(230, 100%, 55%, 0.5);
+    /* bright blue glow */
 
-    /* Gradient */
-    --gradient-primary: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-accent-2) 100%);
-    --gradient-accent: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-primary) 100%);
-    --gradient-card: linear-gradient(145deg, var(--bg-card) 0%, var(--bg-card-2) 100%);
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #977DFF 0%, #0033FF 100%);
+    --gradient-accent: linear-gradient(135deg, #FFCCF2 0%, #977DFF 50%, #0033FF 100%);
+    --gradient-card: linear-gradient(145deg, #060a4a 0%, #0a1060 100%);
+    --gradient-hero: linear-gradient(135deg, #0600AB 0%, #0033FF 50%, #977DFF 100%);
 
-    /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
-    --shadow-glow: 0 0 30px hsla(244, 82%, 62%, 0.25);
+    /* Shadows — blue-tinted */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 8px 24px rgba(0, 0, 51, 0.5);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 30, 0.6);
+    --shadow-glow: 0 0 32px hsla(230, 100%, 55%, 0.3);
 
     /* Spacing */
     --section-py: 100px;
@@ -72,6 +85,7 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* ==========================
    1. CSS RESET & BASE
